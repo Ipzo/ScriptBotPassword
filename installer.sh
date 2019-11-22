@@ -46,8 +46,8 @@ install_service()
     rm -f /etc/init.d/inotify-cho
     rm -f /usr/sbin/$NameScript
     rm -f /etc/$NameConfig 
-    rm -f /var/log/inotify-cho/Hermes.log
-    rm -f /var/log/inotify-cho/Hermes.err
+    rm -f /var/log/Hermes/Hermes.log
+    rm -f /var/log/Hermes/Hermes.err
 
     echo Removing directories..
     rmdir /var/log/Hermes
