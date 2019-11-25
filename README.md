@@ -8,22 +8,24 @@ Hermesd is a service that notify via telegram when a usser change his password
 
 ### Install
 
-...bash
+```bash
 sudo bash installer.sh
+```
 
+```bash
 1) Install
 2) Uninstall
 3) Reinstall
 4) Quit
 Enter option [1-3]:
-...
+```
 
-...bash
+```bash
 Enter option [1-3]: 1
-...
+```
 
 
-...bash
+```bash
 Installing..
 Copying files..
 Making directories..
@@ -31,7 +33,7 @@ Adding permissions..
 Adding service..
 Starting service..
 ScriptBotContrasena.sh is running
-...
+```
 
 
 
