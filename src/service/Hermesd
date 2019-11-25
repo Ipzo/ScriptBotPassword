@@ -11,7 +11,7 @@
 
 case "$1" in
 start)
-   nohup /root/usr/sbin/BotCambioDeContrasena.sh 1>> /var/log/Hermes/Hermes.log 2>>/var/log/Hermes/Hermes.err &
+   nohup /usr/sbin/BotCambioDeContrasena.sh 1>> /var/log/Hermes/Hermes.log 2>>/var/log/Hermes/Hermes.err &
    echo $!>/var/run/BotCambioDeContrasena.sh.pid
    ;;
 stop)
