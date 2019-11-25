@@ -2,7 +2,7 @@
 
 NameScript="BotCambioContrasena.sh"
 NameService="Hermesd"
-NameConfig="Hermes.conf"
+NameConfig="Hermesd.conf"
 
 
 install_service()
