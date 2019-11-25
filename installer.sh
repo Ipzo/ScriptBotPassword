@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NameScript="BotCambioContrasena.sh"
+NameScript="BotCambioDeContrasena.sh"
 NameService="Hermesd"
 NameConfig="Hermesd.conf"
 
