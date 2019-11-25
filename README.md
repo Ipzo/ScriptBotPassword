@@ -1,10 +1,13 @@
-# HERMESD
+# HERMES
 
-Hermesd is a service that notify via telegram when a usser change his password
+HERMES is a service that notify via telegram when a usser change his password
 
 ## Getting Started
 
 ### Prerequisites
+```bash
+[Hermes](https://github.com/itza2/ScriptBotPassword/wiki)
+```
 
 ### Install
 
