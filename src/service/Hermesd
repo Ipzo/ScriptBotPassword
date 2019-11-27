@@ -15,7 +15,7 @@ start)
    echo $!>/var/run/Hermes.sh.pid
    ;;
 stop)
-   pkill -P `cat /var/run/BotCambioDecontrasena.sh.pid`
+   pkill -P `cat /var/run/Hermes.sh.pid`
    rm /var/run/Hermes.sh.pid
    ;;
 restart)
