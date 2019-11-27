@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NameScript="BotCambioDeContrasena.sh"
+NameScript="Hermes.sh"
 NameService="Hermesd"
-NameConfig="Hermesd.conf"
+NameConfig="Hermes.conf"
 
 
 install_service()
