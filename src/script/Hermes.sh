@@ -2,7 +2,7 @@
 
 # -e <event>		Listen for specific event(s) only
 
-source /etc/Hermesd.conf
+source /etc/Hermes.conf
 
 
 TOKEN=$token
