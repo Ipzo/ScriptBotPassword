@@ -14,7 +14,7 @@ HERMES is a service that notify via telegram when a usser change his password
 
 before install, fill the file Hermes.conf with your token of your bot and your id telgram
 if you dont know how to create a Telegram Bot, please read.
-* [How to create a Telgram Bot](https://core.telegram.org/bots)
+* [How to create a Telegram Bot](https://core.telegram.org/bots)
 
 
 ```bash
