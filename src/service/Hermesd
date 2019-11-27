@@ -11,22 +11,22 @@
 
 case "$1" in
 start)
-   nohup /usr/sbin/BotCambioDeContrasena.sh 1>> /var/log/Hermes/Hermes.log 2>>/var/log/Hermes/Hermes.err &
-   echo $!>/var/run/BotCambioDeContrasena.sh.pid
+   nohup /usr/sbin/Hermes.sh 1>> /var/log/Hermes/Hermes.log 2>>/var/log/Hermes/Hermes.err &
+   echo $!>/var/run/Hermes.sh.pid
    ;;
 stop)
    pkill -P `cat /var/run/BotCambioDecontrasena.sh.pid`
-   rm /var/run/BotCambioDeContrasena.sh.pid
+   rm /var/run/Hermes.sh.pid
    ;;
 restart)
    $0 stop
    $0 start
    ;;
 status)
-   if [ -e /var/run/BotCambioDeContrasena.sh.pid ]; then
-      echo BotCambioDeContrasena.sh is running, pid=`cat /var/run/BotCambioDeContrasena.sh.pid`
+   if [ -e /var/run/Hermes.sh.pid ]; then
+      echo Hermes.sh is running, pid=`cat /var/run/Hermes.sh.pid`
    else
-      echo BotCambioDeContrasena.sh is not running
+      echo Hermes.sh is not running
       exit 1
    fi
    ;;
