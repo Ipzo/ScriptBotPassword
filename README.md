@@ -1,6 +1,6 @@
 # HERMES
 
-HERMES is a service that notify via telegram when a user changes their password
+HERMES is a service that notify via Telegram when a user changes their password
 
 ## Getting Started
 
