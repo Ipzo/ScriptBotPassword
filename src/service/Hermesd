@@ -5,8 +5,6 @@
 
 . /etc/rc.d/init.d/functions
 
-    
-#NAME=/root/bot/Hermes
    
 
 case "$1" in
