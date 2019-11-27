@@ -17,7 +17,7 @@ then
 while inotifywait -e /etc/shadow; do
 
 cat /etc/shadow > /tmp/PasswordsTemporal
-mensaje=$(diff /root/tmp/Passwords /tmp/PasswordsTemporal | tail -1 | awk -F: '{print $1}')
+mensaje=$(diff /tmp/Passwords /tmp/PasswordsTemporal | tail -1 | awk -F: '{print $1}')
 cat /etc/shadow > /tmp/Passwords
 curl -s -X POST $URL -d chat_id=$ID -d text="El usuario $mensaje cambio su contraseña"
 echo "El usuario $mensaje cambio su contraseña"
