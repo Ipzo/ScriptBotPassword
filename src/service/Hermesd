@@ -2,7 +2,7 @@
 # chkconfig: 2345 20 80
 # description:
 
-# start_daemon, killproc, status_of_proc, log_*, etc.
+
 . /etc/rc.d/init.d/functions
 
     
