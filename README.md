@@ -1,6 +1,6 @@
 # HERMES
 
-HERMES is a service that notify via telegram when a usser change his password
+HERMES is a service that notify via telegram when a user changes their password
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ HERMES is a service that notify via telegram when a usser change his password
 ### Install
 
 
-before install, fill the file Hermes.conf with your token of your bot and your id telgram
+before install, fill the file Hermes.conf with your bot's TOKEN and your ID telegram
 if you dont know how to create a Telegram Bot, please read.
 * [How to create a Telegram Bot](https://core.telegram.org/bots)
 
@@ -41,7 +41,7 @@ Making directories..
 Adding permissions..
 Adding service..
 Starting service..
-ScriptBotContrasena.sh is running
+Hermes.sh is running
 ```
 
 
