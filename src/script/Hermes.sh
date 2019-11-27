@@ -9,16 +9,16 @@ TOKEN=$token
 ID=$id
 URL"https://api.telegram.org/bot$TOKEN/sendMessage"
 
-cat /etc/shadow > /root/tmp/Passwords
+cat /etc/shadow > /tmp/Passwords
 
 if [[!-z "$TOKEN"]] || [[!-z "$ID"]];
 then
 
 while inotifywait -e /etc/shadow; do
 
-cat /etc/shadow > /root/tmp/PasswordsTemporal
-mensaje=$(diff /root/tmp/Passwords /root/bot/PasswordsTemporal | tail -1 | awk -F: '{print $1}')
-cat /etc/shadow > /root/bot/Passwords
+cat /etc/shadow > /tmp/PasswordsTemporal
+mensaje=$(diff /root/tmp/Passwords /tmp/PasswordsTemporal | tail -1 | awk -F: '{print $1}')
+cat /etc/shadow > /tmp/Passwords
 curl -s -X POST $URL -d chat_id=$ID -d text="El usuario $mensaje cambio su contraseña"
 echo "El usuario $mensaje cambio su contraseña"
 
