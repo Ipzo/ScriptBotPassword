@@ -43,7 +43,7 @@ install_service()
     chkconfig --del $NameService
 
     echo Removing files..
-    rm -f /etc/init.d/inotify-cho
+    rm -f /etc/init.d/$NameService
     rm -f /usr/sbin/$NameScript
     rm -f /etc/$NameConfig 
     rm -f /var/log/Hermes/Hermes.log
