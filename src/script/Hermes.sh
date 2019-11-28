@@ -13,7 +13,7 @@ cat /etc/shadow > /tmp/Passwords
 
 if [[ -n "$TOKEN" && -n "$ID" ]];
 then
-    while inotifywait -e attrip /etc/shadow; do
+    while inotifywait -e attrib /etc/shadow; do
 
     cat /etc/shadow > /tmp/PasswordsTemporal
     mensaje=$(diff /tmp/Passwords /tmp/PasswordsTemporal | tail -1 | awk -F: '{print $1}')
