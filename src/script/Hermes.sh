@@ -79,9 +79,9 @@ if [[ -n "$TOKEN" && -n "$ID" ]]; then
         while read -r user; do
 
             if awk -F "|" '{print $1}' "$shadow_filter" | grep -q "$user"; then
-                mensaje="El usuario '$user' cambio su contraseña"
+                mensaje="$(date) - El usuario '$user' cambio su contraseña"
             else
-                mensaje="Se establecio contraseña a usuario '$user'"
+                mensaje="$(date) - Se establecio contraseña a usuario '$user'"
             fi
 
             send_message "$mensaje" || echo "Fallo al mandar mensaje por telegram"
