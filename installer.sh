@@ -13,7 +13,7 @@ install_service()
     cp src/service/$NameService /etc/init.d
 
     echo Making directories..
-    mkdir /var/log/Hermes
+    mkdir -p /var/log/Hermes
 
     chown root:root /etc/$NameConfig 
     chown root:root /usr/sbin/$NameScript
