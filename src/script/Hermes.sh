@@ -27,7 +27,7 @@ shadow_differ="/tmp/${scriptName%.sh}_differ"
 ########################################################################################################
 
 ########################################################################################################
-# Filtra usuarios y contraseñas de archivo shadow, evita filtrar campos con ! o * en la seccion de contraseñas
+# Filtra usuarios y passwords de archivo shadow, evita filtrar campos con ! o * en la seccion de passwords
 ########################################################################################################
 filtra_shadow() {
 
@@ -67,7 +67,7 @@ if [[ -n "$TOKEN" && -n "$ID" ]]; then
         ## Obtiene usuarios relevantes despues de un evento en shadow
         filtra_shadow "$shadow_differ"
 
-        ## Filtra usuarios con diferencias en sus contraseña encriptada
+        ## Filtra usuarios con diferencias en sus passwords 
         usuarios=$(grep -vFxf "$shadow_filter" "$shadow_differ" | awk -F "|" '{print $1}' || true)
    
         ## Si no obtuvo diferencia
